@@ -1,0 +1,51 @@
+.content {
+    width: 50%;
+    height: 8rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    cursor: pointer;
+}
+
+.content.video-mode {
+    width: 100%;
+}
+
+.thumbnail {
+    border: 1px solid black;
+    width: 35%;
+}
+.thumbnail > img {
+    width: 100%;
+    height: 100%;
+}
+.info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+    line-height: 1.2em;
+    height: 2.4em;
+}
+
+.video-mode .title {
+    -webkit-line-clamp: 1; /* 라인수 */
+    line-height: 1.2em;
+    height: 1.2em;
+}
+
+.channel-title {
+    color: rgba(0, 0, 0, 0.8);
+}
